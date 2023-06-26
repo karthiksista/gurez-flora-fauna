@@ -1,0 +1,102 @@
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --transition: all 400ms ease;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  /* Set the Hero section height to 100% of the viewport height */
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../hero-background.jpg") center/cover no-repeat;
+}
+
+.flora-section,
+.fauna-section {
+  padding: 30px;
+  background-color: var(--color-bg-variant);
+}
+
+.scroll-down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scroll-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.scroll-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.scroll-down span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Customize the styles for tablet landscape view here */
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .flora-section,
+  .fauna-section {
+    padding: 30px;
+  }
+
+  .footer-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Customize the styles for phones and small devices here */
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .flora-section,
+  .fauna-section {
+    padding: 30px;
+  }
+
+  .footer-section {
+    padding: 10px;
+  }
+}

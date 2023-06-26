@@ -1,0 +1,228 @@
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.6);
+  --transition: all 400ms ease;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+
+  --slate-gray: #6b737dff;
+  --teal: #007f8eff;
+  --caribbean-current: #006365ff;
+  --van-dyke: #3b322dff;
+  --lion: #cba265ff;
+  --umber: #6d5c50ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-color: var(--lion);
+  padding: 0 20px;
+}
+.card-body {
+  color: white;
+}
+.navbar-brand {
+  color: var(--color-white);
+}
+
+.nav-link {
+  color: var(--color-white);
+}
+.nav-link.active {
+  color: var(--teal);
+}
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  /* Set the Hero section height to 100% of the viewport height */
+}
+
+#footer {
+  padding: 10px;
+  background: var(--lion);
+  font-weight: 500;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./assets/lepord2.jpg") center/cover no-repeat;
+}
+
+.flora-section {
+  padding: 30px;
+  /* background-color: var(--caribbean-current); */
+}
+
+.fauna-section {
+  padding: 30px;
+  /* background-color: var(--van-dyke); */
+}
+
+.fauna-section {
+  padding: 30px;
+  /* background-color: var(--van-dyke); */
+  .card {
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background-color: var(--lion);
+  }
+  .card:hover {
+    background: transparent;
+    border-color: var(--color-white);
+    border: 1px solid var(--lion);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    .card-body {
+      color: var(--lion) !important;
+    }
+  }
+}
+.fauna-image,
+.flora-image {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+.flora-img-container,
+.fauna-img-container {
+  background-color: var(--color-white);
+}
+
+.flora-content-container {
+  background-color: var(--color-white);
+}
+
+.flora-section {
+  .card {
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background-color: var(--teal);
+  }
+  .card:hover {
+    background: transparent;
+    border-color: var(--color-white);
+    border: 1px solid var(--teal);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    .card-body {
+      color: var(--teal) !important;
+    }
+  }
+  /* Add your styles for the card container */
+}
+
+.scroll-down {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scroll-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.scroll-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.scroll-down span:nth-child(4) {
+  animation-delay: -0.6s;
+}
+.scroll-down span:nth-child(5) {
+  animation-delay: -0.8s;
+}
+.scroll-down span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 10px solid #fff;
+  border-right: 10px solid var(--teal);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.card-img-top {
+  width: 100%;
+  height: 24vw;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Customize the styles for tablet landscape view here */
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .flora-section,
+  .fauna-section {
+    padding: 30px;
+  }
+
+  .footer-section {
+    padding: 10px;
+  }
+
+  .flora-section .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Customize the styles for phones and small devices here */
+
+  .hero-section {
+    padding: 20px;
+  }
+
+  .flora-section,
+  .fauna-section {
+    padding: 30px;
+  }
+
+  .footer-section {
+    padding: 10px;
+  }
+
+  .flora-section .card {
+    width: 100%;
+  }
+}
