@@ -24,6 +24,7 @@ const HeroSection = () => {
               display: "flex",
               alignItems: "center",
             }}
+            data-aos="fade-right"
           >
             Gurez flora is a captivating symphony of nature's beauty, inviting
             visitors to immerse themselves in its enchanting botanical wonders.

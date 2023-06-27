@@ -12,6 +12,8 @@ const App = () => {
   // const PPTXCompose = require("pptx-compose").default;
   // useEffect(async () => {
   //   const pptx = await PPTXCompose.toJSON(pptt);
+  // 22 , 39,
+
   // }, []);
 
   return (

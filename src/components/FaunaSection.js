@@ -89,8 +89,14 @@ const FaunaSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="fauna-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="fauna-image" data-aos="fade-right">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
             <Col
@@ -98,7 +104,7 @@ const FaunaSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="fauna-content">
+              <div className="fauna-content" data-aos="fade-left">
                 <h2>Avi fauna: Birds</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -111,7 +117,11 @@ const FaunaSection = () => {
             {birds.map((floraItem, index) => (
               <Col key={index} className="mb-3">
                 <Card>
-                  <Card.Img variant="top" src={floraItem.download_url} />
+                  <Card.Img
+                    variant="top"
+                    src={floraItem.download_url}
+                    loading="lazy"
+                  />
                   <Card.Body>
                     <Card.Title>{floraItem.author}</Card.Title>
                     <Card.Text>{floraItem.url}</Card.Text>

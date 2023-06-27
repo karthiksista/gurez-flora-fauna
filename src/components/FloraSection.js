@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import IMG1 from "../assets/Picture1.jpg";
-import IMG2 from "../assets/Picture2.jpg";
+// import IMG2 from "../assets/Picture2.jpg";
 import IMG3 from "../assets/Picture3.jpg";
 import IMG4 from "../assets/Picture4.jpg";
 import IMG5 from "../assets/Picture5.jpg";
@@ -17,7 +17,6 @@ const floraData = [
   },
   {
     id: 2,
-    image: IMG2,
     title: "Crypto Currency Dashboard & Financial Visualization",
     github: "https://github.com/inextdeve",
     description: "https://inext.dev",
@@ -389,7 +388,7 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-content">
+              <div className="flora-content" data-aos="fade-right">
                 <h2>Mountain Trees</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -399,8 +398,14 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="flora-image" data-aos="fade-left">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
@@ -410,9 +415,13 @@ const FloraSection = () => {
             {/* Replace the sample data with your actual card data */}
             {mountainTrees.map((floraItem, index) => (
               <Col key={index} className="mb-3">
-                <Card>
+                <Card data-aos="zoom-in">
                   {floraItem.download_url ? (
-                    <Card.Img variant="top" src={floraItem.download_url} />
+                    <Card.Img
+                      variant="top"
+                      src={floraItem.download_url}
+                      loading="lazy"
+                    />
                   ) : (
                     "loading..."
                   )}
@@ -434,7 +443,7 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-content">
+              <div className="flora-content" data-aos="fade-right">
                 <h2>Mountain Shrubs</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -444,8 +453,14 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="flora-image" data-aos="fade-left">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
@@ -455,8 +470,12 @@ const FloraSection = () => {
             {/* Replace the sample data with your actual card data */}
             {mountainShrubs.map((floraItem, index) => (
               <Col key={index} className="mb-3">
-                <Card>
-                  <Card.Img variant="top" src={floraItem.download_url} />
+                <Card data-aos="zoom-in">
+                  <Card.Img
+                    variant="top"
+                    src={floraItem.download_url}
+                    loading="lazy"
+                  />
                   <Card.Body>
                     <Card.Title>{floraItem.author}</Card.Title>
                     <Card.Text>{floraItem.url}</Card.Text>
@@ -475,7 +494,7 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-content">
+              <div className="flora-content" data-aos="fade-right">
                 <h2>Medicinal Herbs</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -485,8 +504,14 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="flora-image" data-aos="fade-left">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
@@ -496,8 +521,12 @@ const FloraSection = () => {
             {/* Replace the sample data with your actual card data */}
             {medicinalHerbs.map((floraItem, index) => (
               <Col key={index} className="mb-3">
-                <Card>
-                  <Card.Img variant="top" src={floraItem.download_url} />
+                <Card data-aos="zoom-in">
+                  <Card.Img
+                    variant="top"
+                    src={floraItem.download_url}
+                    loading="lazy"
+                  />
                   <Card.Body>
                     <Card.Title>{floraItem.author}</Card.Title>
                     <Card.Text>{floraItem.url}</Card.Text>
@@ -516,7 +545,7 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-content">
+              <div className="flora-content" data-aos="fade-right">
                 <h2>Wild Ornamentals</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -526,8 +555,14 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="flora-image" data-aos="fade-left">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
@@ -537,8 +572,12 @@ const FloraSection = () => {
             {/* Replace the sample data with your actual card data */}
             {wildOrnamentals.map((floraItem, index) => (
               <Col key={index} className="mb-3">
-                <Card>
-                  <Card.Img variant="top" src={floraItem.download_url} />
+                <Card data-aos="zoom-in">
+                  <Card.Img
+                    variant="top"
+                    src={floraItem.download_url}
+                    loading="lazy"
+                  />
                   <Card.Body>
                     <Card.Title>{floraItem.author}</Card.Title>
                     <Card.Text>{floraItem.url}</Card.Text>
@@ -557,7 +596,7 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-content">
+              <div className="flora-content" data-aos="fade-right">
                 <h2>Mountain Grasses and Sedges</h2>
                 <p>Text content goes here...</p>
               </div>
@@ -567,8 +606,14 @@ const FloraSection = () => {
               xs={12}
               className="d-flex align-items-center justify-content-center"
             >
-              <div className="flora-image">
-                <img src={faunaimg} alt="" height={"580"} width={"375"} />
+              <div className="flora-image" data-aos="fade-left">
+                <img
+                  src={faunaimg}
+                  alt=""
+                  height={"580"}
+                  width={"375"}
+                  loading="lazy"
+                />
               </div>
             </Col>
           </Row>
@@ -578,8 +623,12 @@ const FloraSection = () => {
             {/* Replace the sample data with your actual card data */}
             {mountainGrassesAndSedges.map((floraItem, index) => (
               <Col key={index} className="mb-3">
-                <Card>
-                  <Card.Img variant="top" src={floraItem.download_url} />
+                <Card data-aos="zoom-in">
+                  <Card.Img
+                    variant="top"
+                    src={floraItem.download_url}
+                    loading="lazy"
+                  />
                   <Card.Body>
                     <Card.Title>{floraItem.author}</Card.Title>
                     <Card.Text>{floraItem.url}</Card.Text>
