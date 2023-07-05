@@ -31,13 +31,13 @@ const HeroSection = () => {
             Nestled in the Himalayas, boasts a diverse and enchanting flora &
             fauna
           </h3>
-          <div class="scroll-down">
+          {/* <div class="scroll-down">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </div> */}
 
           {/* <div
             className="dem"
