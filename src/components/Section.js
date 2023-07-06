@@ -1,11 +1,6 @@
 import React from "react";
-// import { Container, Row, Col } from "react-bootstrap";
-import { Container, Row, Col, Card } from "react-bootstrap";
-// import faunaimg from "../assets/high-tea-with-elephants-nkjtRIMCcTE-unsplash.jpg";
-import IMG120 from "../assets/Picture120.jpg";
 
-import { faunaBirds } from "../data/FaunaData";
-const FaunaSection = () => {
+function Section({}) {
   return (
     <>
       <section id="fauna" className="fauna-section">
@@ -68,6 +63,6 @@ const FaunaSection = () => {
       </section>
     </>
   );
-};
+}
 
-export default FaunaSection;
+export default Section;

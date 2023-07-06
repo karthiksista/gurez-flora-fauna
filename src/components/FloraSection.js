@@ -977,7 +977,7 @@ const FloraSection = () => {
             >
               <div className="flora-image" data-aos="fade-left">
                 <img
-                  src={faunaimg}
+                  src={IMG9}
                   alt=""
                   height={"580"}
                   width={"375"}
