@@ -8,9 +8,6 @@ const HeroSection = () => {
       <div className="hero-bg">
         <Container
           style={{
-            // display: "flex",
-            // alignItems: "center",
-            // justifyContent: "center",
             display: "flex",
             height: "100%",
           }}
@@ -29,7 +26,7 @@ const HeroSection = () => {
             Gurez flora is a captivating symphony of nature's beauty, inviting
             visitors to immerse themselves in its enchanting botanical wonders.
             Nestled in the Himalayas, boasts a diverse and enchanting flora &
-            fauna
+            fauna.
           </h3>
           {/* <div class="scroll-down">
             <span></span>
@@ -38,39 +35,6 @@ const HeroSection = () => {
             <span></span>
             <span></span>
           </div> */}
-
-          {/* <div
-            className="dem"
-            style={{
-              width: "2em",
-              height: "2em",
-              backgroundColor: "transparent",
-              zIndex: "80",
-              bottom: "25px",
-              position: "absolute",
-              borderWidth: "0 0.25em 0.25em 0",
-              borderColor: "antiquewhite",
-              animation: "scrolldown 1.2s ease-in-out infinite 0.15s",
-              borderStyle: "solid",
-            }}
-          ></div>
-          <div
-            className="dem"
-            style={{
-              width: "2em",
-              height: "2em",
-              backgroundColor: "transparent",
-              zIndex: "80",
-              bottom: "25px",
-              position: "absolute",
-              borderWidth: "0 0.25em 0.25em 0",
-              borderColor: "antiquewhite",
-              animation: "scrolldown 1.2s ease-in-out infinite 0.15s",
-              borderStyle: "solid",
-            }}
-          ></div> */}
-
-          {/* Add your content here */}
         </Container>
       </div>
     </section>
