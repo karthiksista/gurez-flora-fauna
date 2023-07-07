@@ -38,8 +38,58 @@ h1 {
   background-color: var(--lion);
 }
 
-.card {
-  height: max-content;
+.check {
+  display: flex;
+}
+
+.layout-card {
+  background-color: var(--teal);
+  height: 100px;
+  width: 200px;
+  display: flex;
+}
+.layout-title {
+  display: flex;
+  color: var(--color-white);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.layout-card.active {
+  cursor: pointer;
+  background: transparent;
+  border-color: var(--color-white);
+  border: 1px solid var(--lion);
+  box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+  transition: all 900ms cubic-bezier(0.19, 1, 0.22, 1);
+  .card-body {
+    color: var(--lion) !important;
+  }
+  .card-title {
+    color: var(--lion) !important;
+  }
+}
+.layout-row {
+  justify-content: center;
+  display: flex;
+  .layout-col {
+    display: flex;
+    justify-content: center;
+  }
+  .card:hover {
+    cursor: pointer;
+    background: transparent;
+    border-color: var(--color-white);
+    border: 1px solid var(--lion);
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    .card-body {
+      color: var(--lion) !important;
+    }
+    .card-title {
+      color: var(--lion) !important;
+    }
+  }
 }
 
 .card-body {
@@ -123,6 +173,9 @@ h1 {
 .flora-content-container {
   background-color: var(--color-white);
 }
+.mb-3 {
+  display: flex;
+}
 
 .flora-section {
   .card {
@@ -131,6 +184,7 @@ h1 {
     border: 1px solid transparent;
     transition: var(--transition);
     background-color: var(--teal);
+    flex: 1;
   }
   .card:hover {
     background: transparent;
@@ -197,7 +251,7 @@ Card.Title .scroll-down {
 
 .card-body {
   text-align: center;
-  text-wrap: nowrap;
+  /* text-wrap: nowrap; */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -219,6 +273,13 @@ Card.Title .scroll-down {
   .flora-section .card {
     width: 100%;
   }
+  .layout-row {
+    display: flex;
+    .layout-col {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -239,5 +300,12 @@ Card.Title .scroll-down {
 
   .flora-section .card {
     width: 100%;
+  }
+  .layout-row {
+    display: flex;
+    .layout-col {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { useRef } from "react";
+import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
 
 function Section({
   sectionImage,
@@ -7,19 +7,20 @@ function Section({
   sectionData,
   sectionId,
   sectionClassName,
+  scrollToRef,
 }) {
   return (
-    <>
+    <div>
       {sectionClassName === "fauna-section" ? (
-        <section id={sectionId} className={sectionClassName}>
-          <Container>
+        <section id={sectionId} className={sectionClassName} ref={scrollToRef}>
+          {/* <Container>
             <Row>
               <Col
                 lg={6}
                 xs={12}
                 className="d-flex align-items-center justify-content-center"
               >
-                <div className="fauna-image" data-aos="fade-left">
+                <div className="fauna-image" data-aos="fade-right">
                   <img
                     src={sectionImage}
                     alt=""
@@ -34,35 +35,39 @@ function Section({
                 xs={12}
                 className="d-flex align-items-center justify-content-center"
               >
-                <div className="fauna-content" data-aos="fade-right">
+                <div className="fauna-content" data-aos="fade-left">
                   <h2 style={{ color: "#006365ff" }}>{sectionHeading}</h2>
                 </div>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
           <Container className="mt-5">
             <Row xs={1} md={2} lg={3}>
               {/* Replace the sample data with your actual card data */}
               {sectionData.map((faunaItem, index) => (
                 <Col key={index} className="mb-3">
-                  <Card data-aos="zoom-in">
-                    <Card.Img
-                      variant="top"
-                      src={faunaItem.imageUrl}
-                      loading="lazy"
-                    />
-                    <Card.Body>
-                      <Card.Title>{faunaItem.author.toUpperCase()}</Card.Title>
-                      <Card.Text>
-                        <span>Local Name</span>:{" "}
-                        {faunaItem.localName.toUpperCase()}
-                      </Card.Text>
-                      <Card.Text>
-                        <span>Zoological Name: </span>{" "}
-                        {faunaItem.botanicalName.toUpperCase()}
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
+                  <div className="check">
+                    <Card data-aos="zoom-in">
+                      <Card.Img
+                        variant="top"
+                        src={faunaItem.imageUrl}
+                        loading="lazy"
+                      />
+                      <Card.Body>
+                        <Card.Title>
+                          {faunaItem.author.toUpperCase()}
+                        </Card.Title>
+                        <Card.Text>
+                          <span>Local Name</span>:{" "}
+                          {faunaItem.localName.toUpperCase()}
+                        </Card.Text>
+                        <Card.Text>
+                          <span>Zoological Name: </span>{" "}
+                          {faunaItem.botanicalName.toUpperCase()}
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </div>
                 </Col>
               ))}
             </Row>
@@ -70,7 +75,7 @@ function Section({
         </section>
       ) : (
         <section id={sectionId} className={sectionClassName}>
-          <Container>
+          {/* <Container>
             <Row>
               <Col
                 lg={6}
@@ -97,7 +102,7 @@ function Section({
                 </div>
               </Col>
             </Row>
-          </Container>
+          </Container> */}
 
           <Container className="mt-5">
             <Row xs={1} md={2} lg={3}>
@@ -128,7 +133,7 @@ function Section({
           </Container>
         </section>
       )}
-    </>
+    </div>
   );
 }
 

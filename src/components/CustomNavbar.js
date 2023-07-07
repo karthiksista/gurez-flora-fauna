@@ -4,7 +4,7 @@ import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 const CustomNavbar = () => {
   return (
     <Navbar collapseOnSelect expand="lg" sticky="top">
-      <Navbar.Brand href="#home">PlaceHolder</Navbar.Brand>
+      <Navbar.Brand href="#home">Shina Cultural Center</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto ">

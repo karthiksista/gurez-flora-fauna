@@ -14,45 +14,71 @@ import {
   medicinalHerbs,
   wildOrnamentals,
 } from "../data/FloraData";
+import ImgOverlayExample from "./ImgOverlay";
 
-const FloraSection = () => {
+const FloraSection = ({ clickedCard, scrollToRef }) => {
   return (
     <>
-      <Section
-        sectionImage={IMG9}
-        sectionHeading={"Mountain Trees"}
-        sectionData={mountainTrees}
-        sectionId="mountain-trees"
-        sectionClassName="flora-section"
-      />
-      <Section
-        sectionImage={IMG34}
-        sectionHeading={"Mountain Shrubs"}
-        sectionData={mountainShrubs}
-        sectionId="mountain-shrubs"
-        sectionClassName="flora-section"
-      />
-      <Section
-        sectionImage={IMG47}
-        sectionHeading={"Medicinal Herbs"}
-        sectionData={medicinalHerbs}
-        sectionId="medicinal-herbs"
-        sectionClassName="flora-section"
-      />
-      <Section
-        sectionImage={IMG82}
-        sectionHeading={"Wild Ornamentals"}
-        sectionData={wildOrnamentals}
-        sectionId="wild-ornamentals"
-        sectionClassName="flora-section"
-      />
-      <Section
-        sectionImage={IMG89}
-        sectionHeading={"Mountain Grasses and Sedges"}
-        sectionData={mountainGrassesAndSedges}
-        sectionId="grasses"
-        sectionClassName="flora-section"
-      />
+      {clickedCard === "trees" ? (
+        <Section
+          sectionImage={IMG9}
+          sectionHeading={"Mountain Trees"}
+          sectionData={mountainTrees}
+          sectionId="mountain-trees"
+          sectionClassName="flora-section"
+          scrollToRef={scrollToRef}
+        />
+      ) : (
+        ""
+      )}
+
+      {clickedCard === "shrubs" ? (
+        <Section
+          sectionImage={IMG34}
+          sectionHeading={"Mountain Shrubs"}
+          sectionData={mountainShrubs}
+          sectionId="mountain-shrubs"
+          sectionClassName="flora-section"
+          scrollToRef={scrollToRef}
+        />
+      ) : (
+        ""
+      )}
+
+      {clickedCard === "herbs" ? (
+        <Section
+          sectionImage={IMG47}
+          sectionHeading={"Medicinal Herbs"}
+          sectionData={medicinalHerbs}
+          sectionId="medicinal-herbs"
+          sectionClassName="flora-section"
+        />
+      ) : (
+        ""
+      )}
+
+      {clickedCard === "ornamentals" ? (
+        <Section
+          sectionImage={IMG82}
+          sectionHeading={"Wild Ornamentals"}
+          sectionData={wildOrnamentals}
+          sectionId="wild-ornamentals"
+          sectionClassName="flora-section"
+        />
+      ) : (
+        ""
+      )}
+      {clickedCard === "grass" ? (
+        <Section
+          sectionImage={IMG89}
+          sectionHeading={"Mountain Grasses and Sedges"}
+          sectionData={mountainGrassesAndSedges}
+          sectionId="grasses"
+          sectionClassName="flora-section"
+        />
+      ) : (
+        ""
+      )}
     </>
   );
 };
