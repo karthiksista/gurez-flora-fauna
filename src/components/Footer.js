@@ -8,12 +8,12 @@ const Footer = () => {
         <Row>
           <Col md={6}>
             <h5>About Us</h5>
-            <p>Placeholder</p>
+            <p>Shina Cultural Center</p>
           </Col>
           <Col md={6}>
             <h5>Contact Us</h5>
             <ul className="list-unstyled">
-              <li>palceholder</li>
+              <li>Shina Cultural Center</li>
               {/* <li>Phone: +1 123-456-7890</li> */}
               <li>Email: info@example.com</li>
             </ul>
