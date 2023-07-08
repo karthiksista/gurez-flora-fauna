@@ -59,10 +59,10 @@ const ImgOverlayExample = forwardRef(({ cbFunc }, ref) => {
           <Col xs={12} md={6} lg={4} xl={3} className="layout-col mt-3">
             <Card
               className={`layout-card ${
-                activeCard === "grasses" ? "active" : ""
+                activeCard === "grass" ? "active" : ""
               }`}
-              onClick={() => handleCardClick("grasses")}
-              key={"grasses"}
+              onClick={() => handleCardClick("grass")}
+              key={"grass"}
             >
               <Card.Title className="layout-title">Mountain Grasses</Card.Title>
             </Card>
