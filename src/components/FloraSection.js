@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
 import Section from "./Section";
 import IMG9 from "../assets/Picture9.jpg";
@@ -14,9 +14,9 @@ import {
   medicinalHerbs,
   wildOrnamentals,
 } from "../data/FloraData";
-import ImgOverlayExample from "./ImgOverlay";
 
-const FloraSection = ({ clickedCard, scrollToRef }) => {
+const FloraSection = forwardRef((props, ref) => {
+  const { clickedCard } = props;
   return (
     <>
       {clickedCard === "trees" ? (
@@ -26,7 +26,7 @@ const FloraSection = ({ clickedCard, scrollToRef }) => {
           sectionData={mountainTrees}
           sectionId="mountain-trees"
           sectionClassName="flora-section"
-          scrollToRef={scrollToRef}
+          ref={ref}
         />
       ) : (
         ""
@@ -39,7 +39,7 @@ const FloraSection = ({ clickedCard, scrollToRef }) => {
           sectionData={mountainShrubs}
           sectionId="mountain-shrubs"
           sectionClassName="flora-section"
-          scrollToRef={scrollToRef}
+          ref={ref}
         />
       ) : (
         ""
@@ -52,6 +52,7 @@ const FloraSection = ({ clickedCard, scrollToRef }) => {
           sectionData={medicinalHerbs}
           sectionId="medicinal-herbs"
           sectionClassName="flora-section"
+          ref={ref}
         />
       ) : (
         ""
@@ -64,6 +65,7 @@ const FloraSection = ({ clickedCard, scrollToRef }) => {
           sectionData={wildOrnamentals}
           sectionId="wild-ornamentals"
           sectionClassName="flora-section"
+          ref={ref}
         />
       ) : (
         ""
@@ -75,12 +77,13 @@ const FloraSection = ({ clickedCard, scrollToRef }) => {
           sectionData={mountainGrassesAndSedges}
           sectionId="grasses"
           sectionClassName="flora-section"
+          ref={ref}
         />
       ) : (
         ""
       )}
     </>
   );
-};
+});
 
 export default FloraSection;

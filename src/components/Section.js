@@ -1,18 +1,12 @@
-import React, { useRef } from "react";
-import { Container, Row, Col, Card, CardGroup } from "react-bootstrap";
+import React, { forwardRef } from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
 
-function Section({
-  sectionImage,
-  sectionHeading,
-  sectionData,
-  sectionId,
-  sectionClassName,
-  scrollToRef,
-}) {
+const Section = forwardRef((props, ref) => {
+  const { sectionData, sectionId, sectionClassName } = props;
   return (
-    <div>
+    <div ref={ref}>
       {sectionClassName === "fauna-section" ? (
-        <section id={sectionId} className={sectionClassName} ref={scrollToRef}>
+        <section id={sectionId} className={sectionClassName}>
           {/* <Container>
             <Row>
               <Col
@@ -135,6 +129,6 @@ function Section({
       )}
     </div>
   );
-}
+});
 
 export default Section;
