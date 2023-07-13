@@ -6,7 +6,6 @@ import CustomNavbar from "./components/CustomNavbar";
 import HeroSection from "./components/HeroSection";
 import FloraSection from "./components/FloraSection";
 import FaunaSection from "./components/FaunaSection";
-import Footer from "./components/Footer";
 import ImgOverlayExample from "./components/ImgOverlay";
 
 const App = () => {
@@ -36,7 +35,6 @@ const App = () => {
   function topFunction() {
     // document.body.scrollTop = 70;
     // document.documentElement.scrollTop = 70;
-    console.log("TOPPP");
     const topElem = scrollToTopRef;
     setTimeout(() => {
       topElem?.current?.scrollIntoView({
@@ -80,7 +78,7 @@ const App = () => {
       <ImgOverlayExample cbFunc={showSelected} ref={scrollToTopRef} />
       <FloraSection clickedCard={clickedCard} ref={ref} />
       <FaunaSection clickedCard={clickedCard} />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

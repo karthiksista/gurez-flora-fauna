@@ -48,7 +48,7 @@ import IMG48 from "../assets/Picture48.jpg";
 import IMG49 from "../assets/Picture49.jpg";
 import IMG50 from "../assets/Picture50.jpg";
 import IMG51 from "../assets/Picture51.jpg";
-import IMG52 from "../assets/Picture52.jpg";
+import IMG52 from "../assets/Picture52.webp";
 import IMG53 from "../assets/Picture53.jpg";
 import IMG54 from "../assets/Picture54.jpg";
 import IMG55 from "../assets/Picture55.jpg";

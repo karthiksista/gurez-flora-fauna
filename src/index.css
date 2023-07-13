@@ -38,8 +38,11 @@ h1 {
   background-color: var(--lion);
 }
 
-.check {
+.flora-col {
   display: flex;
+  /* .check {
+    display: flex;
+  } */
 }
 .myBtn {
   display: block;
@@ -202,7 +205,7 @@ h1 {
 .flora-content-container {
   background-color: var(--color-white);
 }
-.mb-3 {
+.flora-col {
   display: flex;
 }
 

@@ -42,7 +42,7 @@ const ImgOverlayExample = forwardRef(({ cbFunc }, ref) => {
               onClick={() => handleCardClick("herbs")}
               key={"herbs"}
             >
-              <Card.Title className="layout-title">Medicianl Herbs</Card.Title>
+              <Card.Title className="layout-title">Medicinal Herbs</Card.Title>
             </Card>
           </Col>
           <Col xs={12} md={6} lg={4} xl={3} className="layout-col mt-3">

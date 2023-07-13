@@ -39,7 +39,7 @@ const Section = forwardRef((props, ref) => {
             <Row xs={1} md={2} lg={3}>
               {/* Replace the sample data with your actual card data */}
               {sectionData.map((faunaItem, index) => (
-                <Col key={index} className="mb-3">
+                <Col key={index} className="mb-3 fauna-col">
                   <div className="check">
                     <Card data-aos="zoom-in">
                       <Card.Img
@@ -102,7 +102,7 @@ const Section = forwardRef((props, ref) => {
             <Row xs={1} md={2} lg={3}>
               {/* Replace the sample data with your actual card data */}
               {sectionData.map((floraItem, index) => (
-                <Col key={index} className="mb-3">
+                <Col key={index} className="mb-3 flora-col">
                   <Card data-aos="zoom-in">
                     <Card.Img
                       variant="top"

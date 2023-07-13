@@ -9,8 +9,6 @@ const CustomNavbar = () => {
       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="ml-auto ">
           <Nav.Link href="#home">Home</Nav.Link>
-
-          <Nav.Link href="#footer">Contact</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

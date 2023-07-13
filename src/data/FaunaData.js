@@ -48,7 +48,7 @@ import IMG138 from "../assets/Picture138.jpg";
 import IMG139 from "../assets/Picture139.jpg";
 import IMG140 from "../assets/Picture140.jpg";
 import IMG141 from "../assets/Picture141.jpg";
-import IMG142 from "../assets/Picture142.jpg";
+import IMG142 from "../assets/Picture142.webp";
 import IMG143 from "../assets/Picture143.jpg";
 import IMG144 from "../assets/Picture144.jpg";
 import IMG145 from "../assets/Picture145.jpg";
