@@ -130,9 +130,12 @@ h1 {
 .card-body {
   color: white;
 }
-.navbar-brand,
-.dropdown-item {
+.navbar-brand {
   color: var(--lion);
+}
+
+.navbar-brand > img {
+  margin-right: 10px;
 }
 
 .nav-link {
