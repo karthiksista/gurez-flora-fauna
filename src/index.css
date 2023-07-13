@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #1f1f38;
+  --color-bg: #13233d;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
@@ -30,12 +30,17 @@ h1 {
 }
 
 .navbar {
-  background-color: var(--lion);
+  background-color: var(--color-bg);
   padding: 0 20px;
 }
 .navbar-nav .dropdown-menu {
   color: var(--color-white);
-  background-color: var(--lion);
+  background-color: var(--color-bg);
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--lion);
 }
 
 .flora-col {
@@ -127,11 +132,15 @@ h1 {
 }
 .navbar-brand,
 .dropdown-item {
-  color: var(--color-white);
+  color: var(--lion);
 }
 
 .nav-link {
-  color: var(--color-white);
+  color: var(--lion);
+}
+
+.nav-link:hover {
+  color: var(--lion);
 }
 .nav-link.active {
   color: var(--teal);

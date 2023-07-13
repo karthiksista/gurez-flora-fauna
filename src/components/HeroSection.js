@@ -23,10 +23,10 @@ const HeroSection = () => {
             }}
             data-aos="fade-right"
           >
-            Gurez flora is a captivating symphony of nature's beauty, inviting
-            visitors to immerse themselves in its enchanting botanical wonders.
-            Nestled in the Himalayas, boasts a diverse and enchanting flora &
-            fauna.
+            Gurez flora and fauna is a captivating symphony of nature's beauty,
+            inviting visitors to immerse themselves in its enchanting botanical
+            wonders. Nestled in the Himalayas, boasts a diverse and enchanting
+            flora & fauna.
           </h3>
           <div class="scroll-down">
             <span></span>
