@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 // import { Container, Row, Col } from "react-bootstrap";
 // import faunaimg from "../assets/high-tea-with-elephants-nkjtRIMCcTE-unsplash.jpg";
 import IMG120 from "../assets/Picture120.jpg";
@@ -6,7 +6,9 @@ import IMG145 from "../assets/Picture145.jpg";
 
 import { faunaBirds, faunaMammals } from "../data/FaunaData";
 import Section from "./Section";
-const FaunaSection = ({ clickedCard }) => {
+const FaunaSection = forwardRef((props, ref) => {
+  const { clickedCard } = props;
+
   return (
     <>
       {clickedCard === "birds" ? (
@@ -16,6 +18,7 @@ const FaunaSection = ({ clickedCard }) => {
           sectionData={faunaBirds}
           sectionId="birds"
           sectionClassName="fauna-section"
+          ref={ref}
         />
       ) : (
         ""
@@ -27,12 +30,13 @@ const FaunaSection = ({ clickedCard }) => {
           sectionData={faunaMammals}
           sectionId="mammals"
           sectionClassName="fauna-section"
+          ref={ref}
         />
       ) : (
         ""
       )}
     </>
   );
-};
+});
 
 export default FaunaSection;

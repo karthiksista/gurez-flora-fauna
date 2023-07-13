@@ -60,6 +60,10 @@ const App = () => {
 
     // }
   };
+  // useEffect(() => {
+  //   saveFaunaDataToLocalStorage();
+  //   saveFloraDataToLocalStorage();
+  // }, []);
 
   return (
     <div>
@@ -77,7 +81,7 @@ const App = () => {
       <HeroSection />
       <ImgOverlayExample cbFunc={showSelected} ref={scrollToTopRef} />
       <FloraSection clickedCard={clickedCard} ref={ref} />
-      <FaunaSection clickedCard={clickedCard} />
+      <FaunaSection clickedCard={clickedCard} ref={ref} />
       {/* <Footer /> */}
     </div>
   );
